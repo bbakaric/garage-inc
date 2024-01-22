@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
+
+.navWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+    background: #018076;
+    padding: 1.5625rem;
+    height: 100vh;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: row;
+        height: fit-content;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.navLogo {
+    display: block;
+    width: 6.25rem;
+    height: 6.25rem;
+
+    @media only screen and (max-width: 768px) {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+}
+
+.navLinkWrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: row;
+        gap: 3.125rem;
+    }
+}
+
+.navLink {
+    text-decoration: none;
+    color: #F8F6F8;
+    font-size: 1.3125rem;
+    font-family: 'Cabin', sans-serif;
+    padding: .3125rem;
+
+    &:hover {
+        border-radius: .3125rem;
+        opacity: 0.8;
+    }
+
+    @media only screen and (max-width: 768px) {
+        font-size: 1.125rem;
+    }
+}
+
+.copyright {
+    text-decoration: none;
+    color: #F8F6F8;
+    font-size: 1.3125rem;
+    font-family: 'Cabin', sans-serif;
+    padding: .3125rem;
+}
