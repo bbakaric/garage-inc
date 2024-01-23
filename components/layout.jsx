@@ -1,4 +1,4 @@
-import Navigation from './sidenav/Navigation';
+import Navigation from './Navigation/Navigation';
 import layoutStyles from "@/components/layout.module.scss";
  
 export default function Layout({ children }) {

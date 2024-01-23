@@ -1,0 +1,70 @@
+.homepageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.homepageBannerWrapper {
+    position: relative;
+}
+
+.homepageBanner {
+    display: block;
+    width: 100%;
+    max-height: 25rem;
+}
+
+.homepageBannerLink {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    text-decoration: none;
+    background: #018076;
+    padding: .9375rem;
+    color: #F8F6F8;
+    font-size: 1.3125rem;
+    font-family: 'Cabin', sans-serif;
+    transition: transform 330ms ease-in;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: #004146 0rem .3125rem .9375rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        font-size: 1.125rem;
+        padding: .625rem;
+    }
+}
+
+.homepageDescriptionWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .9375rem;
+    padding: 1.5625rem;
+}
+
+.homepageDescriptionTitle {
+    color: #004146;
+    font-size: 1.5rem;
+    font-family: 'Cabin', sans-serif;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 1.3125rem;
+    }
+}
+
+.homepageDescriptionText {
+    color: #004146;
+    font-size: 1.3125rem;
+    font-family: 'Cabin', sans-serif;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 1.125rem;
+    }
+}
